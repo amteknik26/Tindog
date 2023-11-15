@@ -1,0 +1,214 @@
+body,
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  font-weight: 400;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+.container-fluid {
+  padding: 3% 15% 5%;
+  background-color: #ff4c68;
+}
+
+/* Navigation Bar */
+.navbar {
+  padding-bottom: 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+/* Title */
+.download-btn {
+  margin: 5% 3% 5% 0;
+}
+
+#title {
+  background-color: #ff4c68;
+  color: #fff;
+  text-align: left;
+}
+
+.titleImage {
+  width: 60%;
+  /* CSS function to rotate title image  */
+  transform: rotate(25deg);
+  right: 22.5%;
+  position: absolute;
+  /*Position property given to the titleImage to hide the bottom part of the image under the features section
+  purely for aesthetic purposes */
+}
+
+.titleImageDiv {
+  /* This class was made to prevent the 'titleImage' taking up the entire width of the screen. This was happening 
+  because when titleImage is given the 'position=absolute' , it goes out of flow of a general HTML document and
+  the 'width:60%' becomes the width relative to the <html> parent tag itself(which is the entire screen). 
+  This happens when there is no parent tag containing a 'position property'. Using the class 'titleImageDiv'
+  we aim to give the parent tag of the 'titleImage' a position property  for more info visit 
+  https: //css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/ */
+  position: relative;
+}
+
+/* Feature List */
+#features {
+  padding: 7% 15%;
+  background-color: #fff;
+  position: relative;
+}
+
+.FeatureListHeading {
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.FeatureListIcons {
+  color: #EF8172;
+  margin-bottom: 1rem;
+}
+
+.FeatureListIcons:hover {
+  color: #FF4C68;
+}
+
+.FeatureListText {
+  color: #8f8f8f;
+}
+
+/* Testimonials Section */
+
+#testimonials {
+  background-color: #EF8172;
+  color: #fff;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+.TestimonialsText {
+  font-size: 2.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.testimonialImage {
+  border-radius: 100%;
+  width: 10%;
+  margin: 20px;
+}
+
+/* Press Section */
+
+#press {
+  background-color: #EF8172;
+  padding-bottom: 3%;
+}
+
+.pressImages {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/* Pricing Section */
+
+#pricing {
+  padding: 100px;
+}
+
+.PricingColumn {
+  padding: 3% 2%;
+}
+
+.PricingButtons {
+  width: 100%;
+}
+
+.card {
+  height: 100%;
+}
+
+.mod {
+  margin-bottom: 55px;
+}
+
+/* Call to Action */
+
+#cta {
+  background-color: #ff4c68;
+  padding: 10% 15% 7%;
+}
+
+.CTAtext {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 1.7;
+  color: #fff;
+}
+
+/* Footer */
+
+#footer {
+  background-color: #fff;
+  padding: 10% 10% 5%;
+}
+
+.footerIcons {
+  margin: 10px 10px 30px;
+}
+
+/* Media Queries for responsive websites */
+
+@media (max-width:1028px) {
+  #title {
+    text-align: center;
+  }
+
+  .titleImage {
+    transform: rotate(0);
+    /* CSS function to rotate title image  */
+    position: static;
+  }
+
+}
